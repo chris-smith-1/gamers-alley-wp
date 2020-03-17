@@ -1,0 +1,101 @@
+//VARIABLES
+$main-font: 'Raleway', sans-serif;
+
+//GLOBAL STYLES
+.main{
+    width: 75%;
+    margin: auto;
+    position: relative;
+}
+ul{
+    list-style: none;
+    padding: 0px;
+}
+
+// NAVBAR STYLES
+.container{
+    width: 500px;
+    margin: auto;
+}
+.navbar{
+    background-color: #343a40;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 16px 0px 16px 0px;
+
+    .fa-shopping-cart{
+        color: whitesmoke;
+        position: absolute;
+        left: 25px;
+
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    .nav-title{
+        color: whitesmoke;
+        font-weight: bold;
+        font-size: 22px;
+        margin: 0px 0px 0px 0px;
+        font-family: $main-font;
+        a{
+            text-decoration: none;
+            color: whitesmoke;
+        }
+    }
+    .navbar-list{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 500px;
+        margin: 0px 0px 0px 16px;
+    }
+    .navbar-anchor{
+        margin: auto 0px auto 0px;
+        text-decoration: none;
+        color: whitesmoke;
+        padding-bottom: 17px;
+        padding-top: 100%;
+        font-family: $main-font;
+
+        &:hover{
+            border-bottom: solid 2px white;
+        }
+        &:focus{
+            border-bottom: solid 2px white;
+        }
+    }
+}
+
+//FOOTER STLES
+footer{
+    background-color: #343a40;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+    .copyright-year{
+        color: whitesmoke;
+        text-align: center;
+        margin-top: 16px;
+    }
+    .social-media{
+        display: flex;
+        justify-content: center;
+    }
+    .social-media-list{
+        padding: 0px;
+        width: 100px;
+        display: flex;
+        justify-content: space-around;
+    }
+    .social-media-link{
+        display: inline-block;
+    }
+    i{
+        color: whitesmoke;
+    }
+}
