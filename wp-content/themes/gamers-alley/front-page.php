@@ -8,9 +8,6 @@
     <title>Gamers Alley - Home</title>
     <?php wp_head(); ?>
     
-    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/01b172b534.js" crossorigin="anonymous"></script>
-    
 </head>
 
 <body>

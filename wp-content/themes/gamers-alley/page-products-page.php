@@ -11,7 +11,7 @@
 
 <?php get_header(); ?>
 
-    <p>page</p>
+    <p>page-products</p>
 
 <?php get_footer(); ?>    
 
