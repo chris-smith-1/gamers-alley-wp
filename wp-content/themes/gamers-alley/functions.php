@@ -15,13 +15,19 @@ function load_styles() {
     //If front page, load these styles
     if(is_front_page()){
         wp_enqueue_style('ga_index_styles', get_stylesheet_directory_uri() . '/styles/dist/css/index.min.css');
-    }
-
-    if(is_page()){
+    }else if(is_page()){
         // index is only here to get styles for login/signup, need to move those styles from index to main
         wp_enqueue_style('ga_index_styles', get_stylesheet_directory_uri() . '/styles/dist/css/index.min.css');
         wp_enqueue_style('ga_products_styles', get_stylesheet_directory_uri() . '/styles/dist/css/products.min.css');
+    }else{
+        ?> <h1>styles function broken</h1> <?php
     }
 }
 
 add_action('wp_enqueue_scripts', "load_styles");
+
+function ga_features(){
+    add_theme_support('title-tag');
+}
+
+add_action('after_theme_setup', 'ga_features');
