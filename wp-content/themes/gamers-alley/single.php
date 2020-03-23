@@ -11,7 +11,7 @@
 
 <?php get_header(); ?>
 
-    <p>page</p>
+    <p>single</p>
 
 <?php get_footer(); ?>    
 

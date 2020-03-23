@@ -10,12 +10,11 @@
         this.html = html;
     }
 
-    // Get data from api
-    fetch(`http://localhost:8000/products`)
-    .then(response => {
-        return response.json();
-    })
-    .then(data => {
+    // Create product objects
+    (function(){
+
+        const products = querySelectorAll(".product-item");
+        console.log(products);
 
         for (i=0; i<data.length; i++){
 
@@ -36,8 +35,7 @@
         }
 
         fullProductList = productContainer.innerHTML;
-    })
-
+    })()
     //SETUP CATEGORY FILTER
     var filterCheckboxes = document.querySelectorAll(".product-filter__input");
 
